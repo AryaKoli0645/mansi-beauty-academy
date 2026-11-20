@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mansi Beauty Academy and Family Salon | Dronagiri, Uran, Navi Mumbai</title>
+<meta name="description" content="Independent website concept for Mansi Beauty Academy and Family Salon, Dronagiri, Uran, Navi Mumbai: haircare, skincare, makeup, nail care and grooming. Created for demonstration.">
+<meta property="og:title" content="Mansi Beauty Academy and Family Salon">
+<meta property="og:description" content="Haircare, skincare, makeup and nail services in Dronagiri, Navi Mumbai. Independent website concept.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#442C3D">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💄%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Mansi Beauty Academy and Family Salon","telephone":"+91 99876 90089","address":{"@type":"PostalAddress","streetAddress":"Nestor, Kalpana Building, near Dronagiri Hospital, Dronagiri","addressLocality":"Uran, Navi Mumbai","addressRegion":"Maharashtra","postalCode":"400702","addressCountry":"IN"}}
+</script>
+<style>
+:root{
+  --ivory:#F7F0E8;--rose:#D9B9AD;--gold:#B18A55;--plum:#442C3D;--char:#292522;
+  --bg:var(--ivory);--surface:#FFFBF6;--text:var(--char);--muted:#6b5f58;--head:var(--plum);--line:#e4d6c8;--accent:#8a6a3b;--on-plum:#F7F0E8;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Jost",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f171d;--surface:#2a2027;--text:#eee4da;--muted:#b9aaa0;--head:#f1e3d4;--line:#41333d;--accent:#d2ab72}}
+:root[data-theme="dark"]{--bg:#1f171d;--surface:#2a2027;--text:#eee4da;--muted:#b9aaa0;--head:#f1e3d4;--line:#41333d;--accent:#d2ab72}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);color:var(--head);font-weight:500;line-height:1.08;margin:0}
+h1{font-size:clamp(2.9rem,7.5vw,6rem);letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.4vw,3.3rem)}h3{font-size:1.7rem}
+p{margin:0 0 1rem;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7.5rem) 0}
+.lead{color:var(--muted);font-size:1.15rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.75rem 1.7rem;border-radius:999px;border:1.5px solid var(--plum);background:var(--plum);color:var(--on-plum);font:500 1rem var(--sans);letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--gold);border-color:var(--gold);color:#201a16}
+.btn.ghost{background:transparent;color:var(--head);border-color:var(--head)}
+.btn.ghost:hover{background:var(--head);color:var(--bg)}
+.skip{position:absolute;left:-999px;top:0;background:var(--plum);color:#fff;padding:.7rem 1rem;z-index:100}.skip:focus{left:0}
+.demo-bar{background:var(--plum);color:var(--on-plum);text-align:center;font-size:.85rem;padding:.45rem 1rem;letter-spacing:.02em}
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}
+.logo{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--head);text-decoration:none;line-height:1.05}
+.logo small{display:block;font:400 .72rem var(--sans);color:var(--muted);letter-spacing:.04em}
+.links{display:flex;gap:1.6rem;align-items:center}
+.links a{text-decoration:none;font-size:.97rem;padding:.4rem 0;border-bottom:1px solid transparent}
+.links a:hover{border-color:var(--gold)}
+.burger{display:none;width:48px;height:48px;border:1px solid var(--line);background:var(--surface);border-radius:50%;cursor:pointer;color:var(--head)}
+.burger span{display:block;width:20px;height:1.5px;background:currentColor;margin:5px auto;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+@media (max-width:860px){
+  .burger{display:block}
+  .links{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.5rem 1.25rem 1.25rem;display:none}
+  .links.open{display:flex}.links a{padding:.9rem 0;border-bottom:1px solid var(--line)}
+}
+/* hero */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,7vw,6rem)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lead{margin:1.6rem 0 2rem}
+.cta-row{display:flex;gap:.9rem;flex-wrap:wrap}
+.arch{position:relative;aspect-ratio:4/5.2;border-radius:999px 999px 18px 18px;background:var(--plum);overflow:hidden;box-shadow:0 0 0 10px var(--bg),0 0 0 11.5px var(--gold)}
+.arch svg{width:100%;height:100%;display:block}
+.arch figcaption{position:absolute;left:0;right:0;bottom:0;padding:.6rem 1rem;background:rgba(41,37,34,.78);color:#f3e8dc;font-size:.78rem;text-align:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:340px;margin:0 auto;width:100%}}
+/* about */
+.about{background:var(--surface);border-block:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem)}
+.pillars{display:grid;gap:1.5rem;align-content:start}
+.pillars div{border-left:2px solid var(--gold);padding-left:1.2rem}
+.pillars h3{font-size:1.45rem;margin-bottom:.2rem}.pillars p{margin:0;color:var(--muted)}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}}
+/* services */
+.sec-head{margin-bottom:3rem;display:grid;gap:1rem}
+.note{font-size:.88rem;color:var(--muted);border:1px dashed var(--gold);padding:.55rem .9rem;border-radius:10px;display:inline-block;max-width:none}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1.5rem}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:22px 22px 8px 8px;overflow:hidden;display:flex;flex-direction:column}
+.svc .art{height:170px;background:var(--rose);display:block}
+.svc .art svg{width:100%;height:100%;display:block}
+.svc .body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
+.svc p{margin:0;color:var(--muted)}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.more>div{overflow:hidden}.more ul{margin:0;padding:0 0 0 1.1rem;color:var(--muted)}
+.svc.open .more{grid-template-rows:1fr}
+.svc-actions{margin-top:auto;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.toggle{background:none;border:0;color:var(--accent);font:500 .97rem var(--sans);cursor:pointer;text-decoration:underline;text-underline-offset:4px;padding:.6rem .2rem;min-height:44px}
+.svc .btn{min-height:44px;padding:.5rem 1.2rem;font-size:.95rem}
+/* gallery */
+.gallery{background:var(--plum);color:var(--on-plum)}
+.gallery h2{color:var(--on-plum)}.gallery .lead,.gallery .note{color:#d9c9bd}
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.chip{min-height:44px;padding:.4rem 1.2rem;border-radius:999px;border:1px solid #8b6f80;background:transparent;color:var(--on-plum);font:400 .97rem var(--sans);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#201a16}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:1rem}
+.tile{padding:0;border:0;border-radius:14px;overflow:hidden;cursor:zoom-in;background:#2b1b27;aspect-ratio:4/5;position:relative;display:block;width:100%}
+.tile svg{width:100%;height:100%;display:block;transition:transform .5s}@media (hover:hover){.tile:hover svg{transform:scale(1.05)}}
+.tile span{position:absolute;left:.7rem;bottom:.7rem;background:rgba(247,240,232,.92);color:var(--char);font-size:.78rem;padding:.2rem .7rem;border-radius:999px}
+.lb{position:fixed;inset:0;background:rgba(20,12,18,.94);display:none;align-items:center;justify-content:center;z-index:90;padding:1rem}
+.lb.on{display:flex}
+.lb figure{margin:0;width:min(520px,100%);color:#f3e8dc;text-align:center}
+.lb svg{width:100%;max-height:72vh;border-radius:14px}
+.lb figcaption{margin-top:.8rem;font-size:.92rem}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid #8b6f80;background:rgba(68,44,61,.9);color:#fff;font-size:1.4rem;cursor:pointer}
+.lb .x{top:calc(1rem + env(safe-area-inset-top,0px));right:1rem}.lb .p{left:.8rem;top:50%}.lb .n{right:.8rem;top:50%}
+/* academy */
+.academy .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.slots{display:grid;gap:1rem}
+.slot{border:1.5px dashed var(--gold);border-radius:14px;padding:1.1rem 1.3rem;background:var(--surface)}
+.slot b{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:var(--head);display:block}
+.slot small{color:var(--muted)}
+@media (max-width:860px){.academy .wrap{grid-template-columns:1fr}}
+/* why */
+.why{background:var(--surface);border-block:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2rem}
+.why-grid h3{font-size:1.5rem;margin-bottom:.4rem}.why-grid p{color:var(--muted);margin:0}
+.why-grid>div{padding-top:1.2rem;border-top:2px solid var(--rose)}
+/* testimonials */
+.quote{border:1.5px dashed var(--gold);border-radius:18px;padding:2rem;text-align:center;max-width:760px;margin:0 auto}
+.quote p{margin:0 auto 1rem;font-family:var(--serif);font-size:1.6rem;color:var(--head);line-height:1.3}
+/* form */
+.enq{background:var(--plum);color:var(--on-plum)}
+.enq .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,5rem)}
+.enq h2{color:var(--on-plum)}.enq .lead{color:#d9c9bd}
+form{display:grid;gap:1.1rem;background:var(--bg);color:var(--text);padding:clamp(1.3rem,3vw,2.2rem);border-radius:22px}
+.f{display:grid;gap:.35rem}
+label{font-weight:500;font-size:.97rem}
+input,select,textarea{font:inherit;color:var(--text);background:var(--surface);border:1.5px solid #bda99c;border-radius:12px;padding:.8rem 1rem;min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+.err{color:#a3283a;font-size:.9rem;min-height:1.2em}
+@media (prefers-color-scheme:dark){.err{color:#ff9aa8}}
+[aria-invalid="true"]{border-color:#a3283a}
+.status{border-radius:12px;padding:1rem 1.2rem;display:none}
+.status.ok{display:block;background:#e9f1e6;color:#25421f;border:1px solid #9bbd92}
+.status.bad{display:block;background:#fbe9ec;color:#6d1624;border:1px solid #e0a0ab}
+.status .btn{margin:.6rem .5rem 0 0;min-height:42px;padding:.4rem 1.1rem}
+@media (max-width:860px){.enq .wrap{grid-template-columns:1fr}}
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.6rem;display:grid;gap:1rem;align-content:start}
+.card dt{font-weight:500;color:var(--head)}.card dd{margin:0 0 .6rem;color:var(--muted)}
+.map{border-radius:18px;min-height:320px;background:var(--rose);display:grid;place-items:center;text-align:center;padding:2rem;color:var(--char)}
+.map svg{width:64px;height:64px;margin-bottom:.8rem}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+footer{background:var(--char);color:#d8cbbf;padding:2.5rem 0 calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.92rem}
+footer p{max-width:none;margin:.3rem 0}
+/* ===== Motion layer: transforms and opacity only ===== */
+:root{--ease:cubic-bezier(.22,.8,.24,1)}
+html.js body{animation:pg .6s ease backwards}
+@keyframes pg{from{opacity:0}}
+/* hero entrance */
+.js .w{display:inline-block;overflow:hidden;vertical-align:top;padding:.08em 0 .14em;margin:-.08em 0 -.14em}
+.js .wi{display:inline-block;transform:translateY(110%)}
+.js .hero .lead,.js .hero .cta-row{opacity:0;transform:translateY(18px)}
+.js .arch{opacity:0;transform:scale(1.05)}
+.js .arch svg{transform:scale(1.12)}
+.js .hero.go .wi{transform:none;transition:transform .95s var(--ease)}
+.js .hero.go .lead{opacity:1;transform:none;transition:opacity .9s var(--ease) .75s,transform .9s var(--ease) .75s}
+.js .hero.go .cta-row{opacity:1;transform:none;transition:opacity .9s var(--ease) .95s,transform .9s var(--ease) .95s}
+.js .hero.go .arch{opacity:1;transform:none;transition:opacity 1s var(--ease) .25s,transform 1.2s var(--ease) .25s}
+.js .hero.go .arch svg{transform:none;transition:transform 1.8s var(--ease) .25s}
+.fl{transform-box:fill-box;transform-origin:center;animation:fl 8s ease-in-out infinite}
+.fl2{animation-delay:-4s}
+@keyframes fl{50%{transform:translateY(-9px)}}
+/* scroll reveal (class removed by JS once finished so hover states take over) */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+.js .tile.rv{transform:translateY(26px) scale(.97)}
+.js .rv.in,.js .tile.rv.in{opacity:1;transform:none}
+.js .svc.rv .art svg{transform:scale(1.14)}
+.js .svc.rv.in .art svg{transform:none;transition:transform 1.2s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+@media (max-width:860px){.js .rv{transform:translateY(16px);transition-duration:.6s}}
+/* cards and images */
+.svc{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.svc .art svg{transition:transform .8s var(--ease)}
+.tile::after{content:"";position:absolute;inset:0;background:rgba(68,44,61,.42);opacity:0;transition:opacity .35s var(--ease)}
+.tile span{z-index:1;transition:transform .35s var(--ease)}
+.tile svg{transition:transform .8s var(--ease)}
+.tile:focus-visible::after{opacity:1}
+@media (hover:hover){
+  .svc:hover{transform:translateY(-6px);box-shadow:0 22px 40px -24px rgba(68,44,61,.55)}
+  .svc:hover .art svg{transform:scale(1.07)}
+  .tile:hover::after{opacity:1}.tile:hover span{transform:translateY(-4px)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -14px rgba(68,44,61,.7)}
+}
+/* gallery category switch */
+.grid{transition:opacity .22s ease}.grid.swap{opacity:0}
+.chip{transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .2s var(--ease)}
+/* buttons */
+.btn{transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .2s var(--ease),box-shadow .25s var(--ease)}
+.btn:active,.chip:active,.toggle:active{transform:scale(.97);box-shadow:none}
+.btn.arrow::after{content:"\2192";margin-left:.6rem;transition:transform .3s var(--ease)}
+.btn.arrow:hover::after{transform:translateX(5px)}
+/* navigation */
+header.nav{transition:background .35s var(--ease),box-shadow .35s var(--ease)}
+header.nav.scrolled{background:color-mix(in srgb,var(--bg) 98%,transparent);box-shadow:0 14px 30px -26px rgba(68,44,61,.6)}
+@media (min-width:861px){
+  .links a:not(.btn){position:relative;border-bottom-color:transparent!important}
+  .links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+  .links a:not(.btn):hover::after,.links a:not(.btn):focus-visible::after{transform:scaleX(1);transform-origin:left}
+}
+@media (max-width:860px){
+  .links{display:flex;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s .3s}
+  .links.open{visibility:visible;opacity:1;transform:none;transition-delay:0s}
+}
+/* form */
+input,select,textarea{transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px color-mix(in srgb,var(--gold) 24%,transparent)}
+.status.ok,.status.bad{animation:pop .5s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}}
+.tick{width:36px;height:36px;display:block;margin-bottom:.5rem}
+.tick circle,.tick path{fill:none;stroke:#25421f;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:90;stroke-dashoffset:90;animation:draw .8s var(--ease) .1s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+/* lightbox */
+.lb{display:flex;opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility 0s .3s}
+.lb.on{opacity:1;visibility:visible;transition:opacity .3s var(--ease),visibility 0s}
+.lb figure{transform:translateY(14px) scale(.96);transition:transform .45s var(--ease)}
+.lb.on figure{transform:none}
+.lb figure svg{animation:lbin .45s var(--ease)}
+@keyframes lbin{from{opacity:0}}
+.lb button{transition:background .2s var(--ease)}.lb button:hover{background:var(--gold)}
+/* ===== Responsive hardening (mobile, tablet, desktop) ===== */
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{overflow-x:clip}
+svg,img,video{max-width:100%}
+a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+p,dd,li,h1,h2,h3{overflow-wrap:break-word}
+.wrap{width:min(1160px,calc(100% - 2.5rem - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)))}
+.svc-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+@media (min-width:1100px){.svc-grid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}}
+form,.f{grid-template-columns:minmax(0,1fr)}
+.f{min-width:0}
+input,select,textarea{display:block;min-width:0;max-width:100%}
+input[type="date"]{-webkit-appearance:none;appearance:none;text-align:left}
+input[type="date"]::-webkit-date-and-time-value{text-align:left}
+.scrim{display:none}
+html.lb-open{overflow:hidden}
+.lb svg{max-height:72vh;max-height:calc(100dvh - 11rem)}
+.lb .p,.lb .n{margin-top:-24px}
+@keyframes fl{50%{transform:translateY(var(--fy,-9px))}}
+@media (max-width:860px){
+  h1{font-size:clamp(2.5rem,10vw,4.2rem)}
+  section{padding:clamp(3.25rem,10vw,5rem) 0}
+  .hero{padding:2rem 0 3.5rem}
+  .hero .wrap,.about .wrap,.academy .wrap,.enq .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .arch{max-width:min(360px,100%)}
+  .sec-head{margin-bottom:2rem}
+  .grid{gap:.8rem}
+  header.nav{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .logo{font-size:clamp(1.15rem,5.2vw,1.45rem)}
+  .links{max-height:calc(100dvh - 76px - env(safe-area-inset-top,0px));overflow-y:auto;overscroll-behavior:contain;box-shadow:0 24px 40px -24px rgba(41,37,34,.5)}
+  .links a{min-height:52px;display:flex;align-items:center}
+  .links a.btn{justify-content:center;margin-top:1rem;border:1.5px solid var(--plum)}
+  .links a.btn:hover{border-color:var(--gold)}
+  .scrim{display:block;position:fixed;inset:0;z-index:40;background:rgba(20,12,18,.5);opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility 0s .3s}
+  html.nav-open .scrim{opacity:1;visibility:visible;transition:opacity .3s var(--ease),visibility 0s}
+  html.nav-open,html.nav-open body{overflow:hidden}
+  .fl{--fy:-5px;animation-duration:11s}
+  .js .rv{transition-delay:calc(var(--d,0)*60ms)}
+}
+@media (max-width:640px){
+  .lb .p,.lb .n{top:auto;margin:0;bottom:calc(1rem + env(safe-area-inset-bottom,0px))}
+  .lb .p{left:1rem}.lb .n{right:1rem}
+}
+@media (max-width:560px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}
+  .tile{border-radius:10px}
+  .tile span{left:.5rem;bottom:.5rem;font-size:.72rem;padding:.15rem .55rem}
+  .cta-row{flex-direction:column;align-items:stretch}.cta-row .btn{width:100%}
+  .arch{max-width:min(300px,100%)}
+  .chip{padding:.35rem 1rem}
+  .svc .art{height:150px}
+  .svc .body{padding:1.2rem 1.2rem 1.4rem}
+  .quote{padding:1.4rem 1.1rem}.quote p{font-size:clamp(1.25rem,5.6vw,1.6rem)}
+  .card{padding:1.3rem}.card h2{font-size:1.9rem!important}
+  .map{min-height:240px;padding:1.5rem}
+  .slot{padding:1rem}
+  form{padding:1.2rem;border-radius:18px}
+  .status .btn{width:100%;margin:.6rem 0 0}
+  .demo-bar{font-size:.78rem;padding:.4rem .75rem}
+  footer p{font-size:.88rem}
+}
+@media (prefers-reduced-motion:reduce){.tick circle,.tick path{stroke-dashoffset:0!important}.js .rv,.js .tile.rv,.js .hero .lead,.js .hero .cta-row,.js .arch{opacity:1!important;transform:none!important}.js .wi,.js .arch svg,.js .svc.rv .art svg{transform:none!important}*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar">Independent Website Concept: Created for Demonstration</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Mansi Beauty Academy<small>and Family Salon</small></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#academy">Academy</a><a href="#contact">Contact</a>
+      <a class="btn" href="#enquiry">Book an enquiry</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Hair, skin and makeup, <em>tailored</em> to you and your family.</h1>
+      <p class="lead">A family salon and beauty academy in Dronagiri, Uran, built around personal consultations, careful hygiene and friendly care.</p>
+      <div class="cta-row">
+        <a class="btn" href="#enquiry">Send an appointment enquiry</a>
+        <a class="btn ghost" href="#services">Explore services</a>
+      </div>
+    </div>
+    <figure class="arch" style="margin:0">
+      <svg viewBox="0 0 400 520" role="img" aria-label="Decorative line illustration of a hand mirror, brush and comb">
+        <rect width="400" height="520" fill="#442C3D"/>
+        <circle cx="200" cy="215" r="105" fill="none" stroke="#B18A55" stroke-width="3"/>
+        <circle cx="200" cy="215" r="92" fill="#D9B9AD" opacity=".16"/>
+        <circle class="fl" cx="92" cy="120" r="4" fill="#B18A55"/><circle class="fl fl2" cx="318" cy="150" r="3" fill="#D9B9AD"/>
+        <path d="M200 320v120" stroke="#B18A55" stroke-width="12" stroke-linecap="round"/>
+        <path d="M110 190q40-70 120-40" fill="none" stroke="#F7F0E8" stroke-width="2" opacity=".55"/>
+        <g class="fl fl2" stroke="#D9B9AD" stroke-width="3" stroke-linecap="round"><path d="M80 470h70M95 470v-30M110 470v-36M125 470v-30M140 470v-34"/></g>
+        <g class="fl" fill="#B18A55"><rect x="285" y="400" width="14" height="66" rx="7"/><rect x="305" y="410" width="14" height="56" rx="7" fill="#D9B9AD"/><rect x="325" y="396" width="14" height="70" rx="7"/></g>
+      </svg>
+      <figcaption>Decorative illustration, not a photograph of the salon</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <h2>A neighbourhood salon that listens first.</h2>
+      <p class="lead" style="margin-top:1.2rem">Mansi Beauty Academy and Family Salon offers grooming for the whole family under one roof. Visitors describe unhurried consultations, a clean space and staff who take time to understand what suits them.</p>
+      <p class="note">Descriptions on this page come from public listings and feedback themes, and need owner approval before launch.</p>
+    </div>
+    <div class="pillars">
+      <div><h3>Personal consultations</h3><p>Hair and skin recommendations shaped around the individual.</p></div>
+      <div><h3>Attention to cleanliness</h3><p>A tidy, hygienic space is one of the most mentioned strengths.</p></div>
+      <div><h3>Friendly, attentive care</h3><p>Welcoming staff for every age, from first haircuts to bridal days.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Services for every appointment</h2>
+      <p class="lead">Five proposed service groups. Open a card to see what each may include, then enquire about the one you want.</p>
+      <p class="note">Proposed categories from business listings. Services and pricing to be confirmed by the owner.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<section class="gallery" id="portfolio">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Beauty portfolio</h2>
+      <p class="lead">A gallery layout ready for the salon’s own photographs. Until then, every tile is demonstration artwork, not real customer work.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter gallery">
+      <button class="chip" aria-pressed="true" data-f="all">All</button>
+      <button class="chip" aria-pressed="false" data-f="Hair">Hair</button>
+      <button class="chip" aria-pressed="false" data-f="Makeup">Makeup</button>
+      <button class="chip" aria-pressed="false" data-f="Skincare">Skincare</button>
+      <button class="chip" aria-pressed="false" data-f="Nails">Nails</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="academy" id="academy">
+  <div class="wrap">
+    <div>
+      <h2>Beauty academy</h2>
+      <p class="lead" style="margin-top:1.2rem">The business name includes an academy. If training is offered, this section will introduce the courses, so aspiring beauty professionals know what to expect.</p>
+      <p class="note">Placeholders only. No courses, fees, certificates, durations or enrolment dates have been confirmed.</p>
+    </div>
+    <div class="slots">
+      <div class="slot"><b>[Course name to be confirmed]</b><small>Short description, who it suits and what students learn.</small></div>
+      <div class="slot"><b>[Duration and schedule to be confirmed]</b><small>Class timings and batch sizes, if applicable.</small></div>
+      <div class="slot"><b>[Fees and certification to be confirmed]</b><small>Only shown once the owner approves the details.</small></div>
+      <a class="btn ghost" href="#enquiry" data-service="Beauty academy information" style="justify-self:start">Ask about training</a>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head"><h2>Why families choose Mansi</h2></div>
+    <div class="why-grid">
+      <div><h3>Personalised consultations</h3><p>Your hair, skin and occasion come first.</p></div>
+      <div><h3>Hygiene you can see</h3><p>Visitors regularly mention a clean, well-kept salon.</p></div>
+      <div><h3>Friendly experience</h3><p>Attentive staff who make first-time visitors comfortable.</p></div>
+      <div><h3>Individual recommendations</h3><p>Hair and skincare suggestions suited to you, with no one-size-fits-all routine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><h2>Kind words from clients</h2></div>
+    <div class="quote">
+      <p>Genuine client reviews will appear here.</p>
+      <p style="font:400 1rem var(--sans);color:var(--muted)">Reviews are only added with the reviewer’s permission and the owner’s approval. Nothing is invented.</p>
+    </div>
+  </div>
+</section>
+
+<section class="enq" id="enquiry">
+  <div class="wrap">
+    <div>
+      <h2>Request an appointment</h2>
+      <p class="lead" style="margin-top:1.2rem">Tell us what you’re looking for and when. Your enquiry is not a confirmed booking; the salon confirms the time with you.</p>
+      <p class="lead">This demo has no server connected, so the form prepares your enquiry for you to send by phone or copy. Nothing is stored or delivered automatically.</p>
+    </div>
+    <form id="form" novalidate>
+      <div class="f"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required><div class="err" id="e-name"></div></div>
+      <div class="f"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required><div class="err" id="e-phone"></div></div>
+      <div class="f"><label for="service">Service interested in</label>
+        <select id="service" name="service" required><option value="">Choose a service</option><option>Haircare</option><option>Skincare and facials</option><option>Makeup and bridal makeup</option><option>Nail care</option><option>Grooming and waxing</option><option>Beauty academy information</option></select><div class="err" id="e-service"></div></div>
+      <div class="f"><label for="date">Preferred date</label><input id="date" name="date" type="date" required><div class="err" id="e-date"></div></div>
+      <div class="f"><label for="msg">Additional message <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="msg" name="msg" maxlength="500"></textarea></div>
+      <button class="btn" type="submit">Prepare my enquiry</button>
+      <div class="status" id="status" role="status" aria-live="polite" tabindex="-1"></div>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="card">
+      <h2 style="font-size:2.2rem">Visit or call</h2>
+      <dl style="margin:0">
+        <dt>Salon</dt><dd>Mansi Beauty Academy and Family Salon</dd>
+        <dt>Address</dt><dd>Nestor, Kalpana Building, Dronagiri, near Dronagiri Hospital, Uran, Navi Mumbai, Maharashtra 400702</dd>
+        <dt>Phone (publicly listed, editable)</dt><dd><a href="tel:+919987690089" id="tel">+91 99876 90089</a></dd>
+        <dt>Opening hours</dt><dd>[To be added after owner verification]</dd>
+        <dt>WhatsApp</dt><dd>[To be added once the owner confirms the number uses WhatsApp]</dd>
+      </dl>
+      <a class="btn" href="tel:+919987690089">Call the salon</a>
+    </div>
+    <div class="map">
+      <div>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4c-11 0-20 9-20 20 0 15 20 36 20 36s20-21 20-36C52 13 43 4 32 4z" fill="#442C3D"/><circle cx="32" cy="24" r="8" fill="#F7F0E8"/></svg>
+        <p style="margin:0 auto 1rem">Proposed location near Dronagiri Hospital. Please verify before relying on it.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mansi+Beauty+Academy+and+Family+Salon+Dronagiri+Uran+Navi+Mumbai+400702">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mansi Beauty Academy and Family Salon</strong>, Dronagiri, Uran, Navi Mumbai 400702</p>
+    <p>Independent Website Concept: Created for Demonstration. Not an official website; not commissioned, approved or launched by the business. Photography is not used; all imagery is demonstration artwork.</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Gallery viewer">
+  <button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous image">‹</button><button class="n" aria-label="Next image">›</button>
+  <figure id="lbfig"></figure>
+</div>
+
+<script>
+/* Motion layer: runs before the main script so window.__rv exists for dynamic content */
+(function(){
+  var root=document.documentElement,io=null;
+  try{
+    var hero=document.querySelector('.hero'),h1=hero.querySelector('h1'),n=0;
+    /* split headline into masked words for the text reveal */
+    (function sp(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(c){
+        if(c.nodeType===3){
+          var f=document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(function(t){
+            if(!t)return;
+            if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return;}
+            var w=document.createElement('span'),i=document.createElement('span');
+            w.className='w';i.className='wi';i.textContent=t;i.style.transitionDelay=(120+n++*70)+'ms';
+            w.appendChild(i);f.appendChild(w);
+          });
+          c.parentNode.replaceChild(f,c);
+        }else if(c.nodeType===1){sp(c);}
+      });
+    })(h1);
+    document.querySelectorAll('.hero .btn,form .btn[type="submit"]').forEach(function(b){b.classList.add('arrow');});
+    var go=function(){hero.classList.add('go');};
+    var failsafe=setTimeout(go,1500);
+    Promise.race([document.fonts?document.fonts.ready:Promise.resolve(),new Promise(function(r){setTimeout(r,700);})]).then(function(){
+      clearTimeout(failsafe);requestAnimationFrame(function(){requestAnimationFrame(go);});
+    });
+    if('IntersectionObserver' in window){
+      io=new IntersectionObserver(function(es){
+        es.forEach(function(e){
+          var el=e.target;if(!e.isIntersecting&&e.boundingClientRect.bottom>0)return;io.unobserve(el);el.classList.add('in');
+          /* once revealed, drop reveal classes so hover transitions are not slowed */
+          setTimeout(function(){el.classList.remove('rv','in');},1400+(parseInt(el.style.getPropertyValue('--d'),10)||0)*90);
+        });
+      },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+      var nav=document.querySelector('header.nav'),bar=document.querySelector('.demo-bar');
+      new IntersectionObserver(function(es){nav.classList.toggle('scrolled',!es[0].isIntersecting);}).observe(bar);
+    }
+    window.__rv=function(list,seq){
+      if(!io)return;
+      Array.prototype.forEach.call(list,function(el,i){
+        var d=seq?Math.min(Array.prototype.indexOf.call(el.parentNode.children,el),5):i%4;
+        el.style.setProperty('--d',d);el.classList.add('rv');io.observe(el);
+      });
+    };
+    ['.sec-head>*','.about .wrap>div:first-child>*','.pillars>div','.academy .wrap>div:first-child>*','.slots>*','.why-grid>div','.quote','.enq .wrap>div:first-child>*','form','.card','.map'].forEach(function(s){
+      window.__rv(document.querySelectorAll(s),true);
+    });
+  var sweep=function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){if(el.getBoundingClientRect().top<innerHeight){el.classList.add('in');setTimeout(function(){el.classList.remove('rv','in');},1500);}});};
+    window.addEventListener('load',function(){setTimeout(sweep,2500);});
+    window.addEventListener('hashchange',function(){setTimeout(sweep,1200);});
+  }catch(err){root.classList.remove('js');}
+})();
+</script>
+<script>
+(function(){
+  var C={ivory:'#F7F0E8',rose:'#D9B9AD',gold:'#B18A55',plum:'#442C3D',char:'#292522'};
+  /* Demonstration artwork per category (abstract, flat) */
+  function art(cat,i){
+    var bgs=[C.rose,C.plum,C.ivory,C.gold],bg=bgs[i%4],fg=(bg===C.plum)?C.rose:C.plum,ac=(bg===C.gold)?C.ivory:C.gold,s='';
+    if(cat==='Hair'){for(var k=0;k<6;k++)s+='<path d="M'+(60+k*24)+' 0C'+(10+k*30)+' 120 '+(230-k*22)+' 200 '+(70+k*22)+' 400" fill="none" stroke="'+(k%2?ac:fg)+'" stroke-width="5" opacity="'+(.9-k*.1)+'"/>';}
+    if(cat==='Makeup'){s+='<path d="M60 230q70-70 140 0q-70 70-140 0z" fill="'+fg+'"/><path d="M60 230q70 18 140 0" stroke="'+bg+'" stroke-width="3" fill="none"/><rect x="170" y="70" width="22" height="110" rx="11" fill="'+ac+'" transform="rotate(25 180 125)"/><circle cx="90" cy="95" r="22" fill="'+ac+'" opacity=".6"/>';}
+    if(cat==='Skincare'){s+='<circle cx="130" cy="200" r="110" fill="none" stroke="'+fg+'" stroke-width="2"/><circle cx="130" cy="200" r="76" fill="none" stroke="'+ac+'" stroke-width="2"/><path d="M130 130c-26 36-34 56-34 76a34 34 0 0068 0c0-20-8-40-34-76z" fill="'+fg+'"/>';}
+    if(cat==='Nails'){for(var n=0;n<5;n++){s+='<rect x="'+(34+n*40)+'" y="'+(150+Math.abs(2-n)*22)+'" width="30" height="'+(130-Math.abs(2-n)*14)+'" rx="15" fill="'+(n%2?ac:fg)+'"/><rect x="'+(40+n*40)+'" y="'+(158+Math.abs(2-n)*22)+'" width="8" height="40" rx="4" fill="#fff" opacity=".35"/>';}}
+    return '<svg viewBox="0 0 260 325" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="260" height="325" fill="'+bg+'"/><g transform="translate(0,-30) scale(1)">'+s+'</g></svg>';
+  }
+  /* Services */
+  var S=[
+    {t:'Haircare',cat:'Hair',d:'Cuts and styling shaped around your face, routine and hair type.',l:['Haircuts and styling','Hair spa']},
+    {t:'Skincare and facials',cat:'Skincare',d:'Skin analysis first, then facials chosen to suit what you need.',l:['Facial treatments','Skin analysis','De-tan treatments']},
+    {t:'Makeup and bridal makeup',cat:'Makeup',d:'Natural-looking, long-lasting makeup for celebrations and big days.',l:['Bridal makeup','Engagement makeup','Occasion makeup']},
+    {t:'Nail care',cat:'Nails',d:'Tidy hands and feet, with extensions for when you want more.',l:['Manicure and pedicure','Nail extensions']},
+    {t:'Grooming and waxing',cat:'Hair',d:'Everyday grooming for the whole family, done with care.',l:['Waxing','Grooming services']}
+  ];
+  var sg=document.getElementById('svcGrid');
+  S.forEach(function(s,i){
+    var el=document.createElement('article');el.className='svc';
+    el.innerHTML='<div class="art" aria-hidden="true">'+art(s.cat,i+1).replace('preserveAspectRatio="xMidYMid slice"','preserveAspectRatio="xMidYMid slice"')+'</div><div class="body"><h3>'+s.t+'</h3><p>'+s.d+'</p><div class="more" id="m'+i+'"><div><ul>'+s.l.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul></div></div><div class="svc-actions"><button class="toggle" aria-expanded="false" aria-controls="m'+i+'">What’s included</button><a class="btn arrow" href="#enquiry" data-service="'+s.t+'">Enquire</a></div></div>';
+    sg.appendChild(el);
+  });
+  window.__rv&&window.__rv(sg.querySelectorAll('.svc'));
+  sg.addEventListener('click',function(e){
+    var b=e.target.closest('.toggle');if(!b)return;
+    var c=b.closest('.svc'),o=c.classList.toggle('open');b.setAttribute('aria-expanded',o);
+  });
+  /* Service CTA preselects dropdown */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-service]');if(a){document.getElementById('service').value=a.dataset.service;}
+  });
+  /* Nav */
+  var bu=document.getElementById('burger'),ln=document.getElementById('links');
+  function closeNav(){document.documentElement.classList.remove('nav-open');ln.classList.remove('open');bu.setAttribute('aria-expanded','false');bu.setAttribute('aria-label','Open menu');}
+  bu.addEventListener('click',function(){var o=ln.classList.toggle('open');document.documentElement.classList.toggle('nav-open',o);bu.setAttribute('aria-expanded',o);bu.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  ln.addEventListener('click',function(e){if(e.target.tagName==='A')closeNav();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});
+  var sc=document.createElement('div');sc.className='scrim';document.body.appendChild(sc);sc.addEventListener('click',closeNav);
+  var mq=matchMedia('(min-width:861px)');(mq.addEventListener?mq.addEventListener.bind(mq,'change'):mq.addListener.bind(mq))(function(m){if(m.matches)closeNav();});
+  /* Gallery */
+  var items=[],cats=['Hair','Makeup','Skincare','Nails'];
+  for(var i=0;i<12;i++){var c=cats[i%4];items.push({cat:c,i:i,label:c+' (demonstration artwork '+(Math.floor(i/4)+1)+')'});}
+  var grid=document.getElementById('grid'),cur='all',vis=[];
+  function render(){
+    vis=items.filter(function(x){return cur==='all'||x.cat===cur});
+    grid.innerHTML=vis.map(function(x,k){return'<button class="tile" data-k="'+k+'" aria-label="View '+x.label+'">'+art(x.cat,x.i)+'<span>'+x.cat+'</span></button>'}).join('');
+    window.__rv&&window.__rv(grid.querySelectorAll('.tile'));
+  }
+  function swap(){grid.style.minHeight=grid.offsetHeight+'px';grid.classList.add('swap');setTimeout(function(){render();grid.classList.remove('swap');setTimeout(function(){grid.style.minHeight='';},900);},220);}
+  render();
+  document.querySelector('.filters').addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b)return;cur=b.dataset.f;
+    document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b)});swap();
+  });
+  var lb=document.getElementById('lb'),fig=document.getElementById('lbfig'),idx=0,last=null;
+  function show(k){idx=(k+vis.length)%vis.length;var x=vis[idx];fig.innerHTML=art(x.cat,x.i)+'<figcaption>'+x.label+'. Not real client work.</figcaption>';}
+  grid.addEventListener('click',function(e){var t=e.target.closest('.tile');if(!t)return;last=t;show(+t.dataset.k);document.documentElement.classList.add('lb-open');lb.classList.add('on');lb.querySelector('.x').focus();});
+  function close(){document.documentElement.classList.remove('lb-open');lb.classList.remove('on');if(last)last.focus();}
+  lb.addEventListener('click',function(e){
+    if(e.target===lb||e.target.closest('.x'))close();
+    else if(e.target.closest('.p'))show(idx-1);else if(e.target.closest('.n'))show(idx+1);
+  });
+  var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;tx=null;if(Math.abs(dx)>50)show(idx+(dx<0?1:-1));},{passive:true});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1);
+    if(e.key==='Tab'){var f=lb.querySelectorAll('button'),a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+  });
+  /* Form */
+  var form=document.getElementById('form'),st=document.getElementById('status'),dt=document.getElementById('date');
+  var today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());dt.min=today.toISOString().slice(0,10);
+  function setErr(id,m){var f=document.getElementById(id),e=document.getElementById('e-'+id);e.textContent=m;f.setAttribute('aria-invalid',m?'true':'false');return !m;}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();st.className='status';st.textContent='';
+    var v=function(id){return form.elements[id].value.trim()};
+    var digits=v('phone').replace(/[\s\-()]/g,'').replace(/^(\+91|91|0)/,'');
+    var ok=[
+      setErr('name',v('name').length<2?'Enter your name.':''),
+      setErr('phone',/^[6-9]\d{9}$/.test(digits)?'':'Enter a valid 10-digit Indian mobile number.'),
+      setErr('service',v('service')?'':'Choose a service.'),
+      setErr('date',!v('date')?'Choose a preferred date.':(v('date')<dt.min?'Choose today or a future date.':''))
+    ];
+    if(ok.indexOf(false)>-1){
+      st.className='status bad';st.textContent='Please fix the highlighted fields and try again.';
+      var first=form.querySelector('[aria-invalid="true"]');if(first)first.focus();return;
+    }
+    var text='Appointment enquiry, Mansi Beauty Academy and Family Salon\nName: '+v('name')+'\nPhone: '+digits+'\nService: '+v('service')+'\nPreferred date: '+v('date')+(v('msg')?'\nMessage: '+v('msg'):'');
+    st.className='status ok';
+    st.innerHTML='<svg class="tick" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15"/><path d="M11 18.5l5 5 9-10"/></svg><strong>Your enquiry is ready, but it has not been sent.</strong> This demo has no booking system connected. Call the salon with these details, or copy them.<br><a class="btn" href="tel:+919987690089">Call the salon</a><button type="button" class="btn ghost" id="copy">Copy enquiry</button>';
+    st.focus();
+    document.getElementById('copy').onclick=function(){
+      var b=this;(navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(function(){b.textContent='Copied'},function(){b.textContent='Copy failed: select and copy manually'});
+    };
+  });
+})();
+</script>
+</body>
+</html>
